@@ -49,9 +49,10 @@
 # print([word.upper() for word in words])
 
 
-from operator import itemgetter
-cars = [["Audi",2006], ["BMW",2016], ["Jaguar",2026]]
-print([tuple(car) for car in cars])
-print([car[0] for car in cars])
-print([year[1] * 2 for year in cars])
-print(min((car[1]) for car in cars))
+# cars = [["Audi",2006], ["BMW",2016], ["Jaguar",2026]]
+# print([tuple(car) for car in cars])
+# print([car[0] for car in cars])
+# print([year[1] * 2 for year in cars])
+# print(min((car[1]) for car in cars))
+
+
