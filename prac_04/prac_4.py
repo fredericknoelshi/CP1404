@@ -93,13 +93,26 @@
 #         print("Value not in list")
 #     name_to_remove = input("Who do you want to remove? ")
 
+# from operator import itemgetter
+# data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantanelle', 9]]
+# name_width = max(len(pair[0]) for pair in data)
+# score_width = max(len(str(pair[1])) for pair in data)
+#
+# data.sort(key=itemgetter(1), reverse=True)
+#
+# for pair in data:
+#     print(f"{pair[0]} = {pair[1]}")
+#
+# for pair in data:
+#     name, score = pair
+#     print(f"{name:<{20}} = {score:>{5}}")
 
-data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantanelle', 9]]
-name_width = max(len(pair[0]) for pair in data)
-score_width = max(len() for pair in data)
-for pair in data:
-    print(f"{pair[0]} = {pair[1]}")
 
-for pair in data:
-    name, score = pair
-    print(f"{name:<{20}} = {score:>{5}}")
+values = [[3,4,5,1], [33,6,1,2]]
+
+v = values[0][0]
+for row in range(0, len(values)):
+    for column in range(0, len(values[row])):
+        if v < values[row][column]:
+            v = values[row][column]
+print(v)
