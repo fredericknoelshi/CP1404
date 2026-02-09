@@ -92,3 +92,14 @@
 #     except ValueError:
 #         print("Value not in list")
 #     name_to_remove = input("Who do you want to remove? ")
+
+
+data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantanelle', 9]]
+name_width = max(len(pair[0]) for pair in data)
+score_width = max(len() for pair in data)
+for pair in data:
+    print(f"{pair[0]} = {pair[1]}")
+
+for pair in data:
+    name, score = pair
+    print(f"{name:<{20}} = {score:>{5}}")
