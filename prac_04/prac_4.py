@@ -108,11 +108,36 @@
 #     print(f"{name:<{20}} = {score:>{5}}")
 
 
-values = [[3,4,5,1], [33,6,1,2]]
+# values = [[3,4,5,1], [33,6,1,2]]
+#
+# v = values[0][0]
+# for row in range(0, len(values)):
+#     for column in range(0, len(values[row])):
+#         if v < values[row][column]:
+#             v = values[row][column]
+# print(v)
 
-v = values[0][0]
-for row in range(0, len(values)):
-    for column in range(0, len(values[row])):
-        if v < values[row][column]:
-            v = values[row][column]
-print(v)
+
+def main():
+    numbers = get_numbers()
+    numbers = square_numbers(numbers)
+    display_numbers(numbers)
+
+def get_numbers():
+    numbers = input("Enter numbers separated by commas:")
+    return numbers
+
+def square_numbers(numbers):
+    numba = numbers.split(',')
+    squared_numbers = [float(number) ** 2 for number in numba]
+    squared_numbers.sort()
+
+    return squared_numbers
+
+def display_numbers(numbers):
+    print(numbers)
+    # numbers.sort()
+    # print("..".join(str(number) for number in numbers))
+    # print("..".join([str(number) for number in sorted(numbers)]))
+
+main()
