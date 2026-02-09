@@ -60,15 +60,23 @@
 # z=4
 # print(x==z)
 
-numbers = [12, 45, 67]
-new_numbers = numbers
+# numbers = [12, 45, 67]
+# new_numbers = numbers
+#
+# numbers_2 = [12, 45, 67]
+#
+# print(new_numbers is numbers)
+# print(numbers is numbers_2)
+# print(new_numbers == numbers)
+# print(numbers == numbers_2)
+# # "==" is different from "is"
 
-numbers_2 = [12, 45, 67]
-
-print(new_numbers is numbers)
-print(numbers is numbers_2)
-print(new_numbers == numbers)
-print(numbers == numbers_2)
-# "==" is different from "is"
-
+# things = []
+#
+# for x in range(1, 4):
+#     for y in range(1, 4):
+#         things.append(x + y)
+#
+# print(things)
+# print([x+y for x in range(1, 4) for y in range(1, 4)])
 
