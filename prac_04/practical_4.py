@@ -39,3 +39,11 @@
 #
 # print([number * 2 for number in numbers if number > 50])
 
+
+words = "This is Python"
+print(words)
+words = words.split()
+
+print([word for word in words if len(word) > 2])
+print([len(word) for word in words])
+print([word.upper() for word in words])
