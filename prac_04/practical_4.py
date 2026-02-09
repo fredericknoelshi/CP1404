@@ -80,3 +80,15 @@
 # print(things)
 # print([x+y for x in range(1, 4) for y in range(1, 4)])
 
+names = ["Ada", "Alan", "Bill", "John"]
+print(", ".join(names))
+name_to_remove = input("Who do you want to remove? ")
+# if name_to_remove == "" or name_to_remove not in names:
+#     print("Invalid input")
+while name_to_remove != "":
+    try:
+        names.remove(name_to_remove)
+        print(names)
+    except ValueError:
+        print("Value not in list")
+    name_to_remove = input("Who do you want to remove? ")
