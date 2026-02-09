@@ -56,3 +56,19 @@
 # print(min((car[1]) for car in cars))
 
 
+# x=3
+# z=4
+# print(x==z)
+
+numbers = [12, 45, 67]
+new_numbers = numbers
+
+numbers_2 = [12, 45, 67]
+
+print(new_numbers is numbers)
+print(numbers is numbers_2)
+print(new_numbers == numbers)
+print(numbers == numbers_2)
+# "==" is different from "is"
+
+
