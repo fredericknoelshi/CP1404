@@ -12,3 +12,12 @@ for name, number in data:
     # this is fine but can be better (avoid hard coding)
 
     # print(f"{name:<{name_width}} = {number:>{number_width}}")
+
+"""get method"""
+# for word in words:
+#       word_to_count[word] = word_to_count.get(word, 0) + 1
+#       print(word, word_to_count[word])
+
+module_to_number = {"CP1401": 45, "CP1404": 78, "CP5639": 34}
+modules = ["CP1401", "CP1404", "CP5639"]
+
