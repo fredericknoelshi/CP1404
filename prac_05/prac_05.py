@@ -41,8 +41,6 @@
 # print(tuple(zip(flowers, numbers)))
 # print(set(zip(flowers, numbers)))
 
-import json
-name_to_age = {}
 
 from operator import itemgetter
 data_dictionary = {'Derek': 7, 'Xavier': 80, 'Bob': 612, 'Chantanelle': 9}
