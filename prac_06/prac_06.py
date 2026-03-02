@@ -42,6 +42,9 @@ When we make a user, they start with the name we want and appropriate default va
 """
 
 class User:
+    """
+    Class representing a user in a taco reward program
+    """
     def __init__(self, name: str, number_of_tacos: int = 0, score: int = 0):
         self.name = name
         self.number_of_tacos = number_of_tacos
