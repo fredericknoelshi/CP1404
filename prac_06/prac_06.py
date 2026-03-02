@@ -33,3 +33,26 @@ class Monster:
         """
         return self.number_of_teeth > 16 or self.colour.lower() == "red"
 
+"""
+Write a user class, for a fun Taco Reward program. 
+A User knows: name, number of tacos (starts at 5, goes down when they give a taco), and score 
+A User can give a taco to another user 
+We should be able to print a User like: Ben, 2 points, 4 tacos left 
+When we make a user, they start with the name we want and appropriate default values
+"""
+
+class User:
+    def __init__(self, name: str, number_of_tacos: int = 0, score: int = 0):
+        self.name = name
+        self.number_of_tacos = number_of_tacos
+        self.score = score
+
+    def give_taco(self, other_user: "User"):
+        if self.number_of_tacos > 0:
+            self.number_of_tacos -= 1
+            other_user.score += self.score
+        else:
+            print(f"{self.name} has no tacos left to give.")
+
+    def __str__(self) -> str:
+        return f"{self.name}, {self.score} points, {self.number_of_tacos} tacos left"
